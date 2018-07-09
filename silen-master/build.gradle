@@ -1,0 +1,61 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+compileJava.options.encoding = 'UTF-8'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE"
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+    maven { url "https://repo.spring.io/snapshot/" }
+}
+
+eclipse {
+    classpath {
+        downloadJavadoc = false
+        downloadSources = true
+    }
+}
+
+dependencies {
+    ext {
+        SPRING_BOOT_VERSION = "1.5.8.RELEASE"
+        SPRING_WEB_MVC_VERSION = "4.2.6.RELEASE"
+    }
+    
+    compile 'javax.servlet:jstl'
+    
+    compile "org.springframework.boot:spring-boot-starter-web:$SPRING_BOOT_VERSION"
+    compile "org.springframework.boot:spring-boot-starter-tomcat"
+    compile "org.apache.tomcat.embed:tomcat-embed-jasper"
+    
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "org.springframework.composed:spring-composed:1.0.0.BUILD-SNAPSHOT"
+    compile 'org.json:json:20160810'
+    
+    compile 'org.springframework.security:spring-security-web'
+    compile 'org.springframework.security:spring-security-config'
+    compile 'io.jsonwebtoken:jjwt:0.6.0'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.5'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.7.5'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.7.5'
+    
+    compile 'com.google.maps:google-maps-services:0.2.4'
+        
+    compile "mysql:mysql-connector-java:6.0.6"
+}

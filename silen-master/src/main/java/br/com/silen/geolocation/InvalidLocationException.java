@@ -1,0 +1,7 @@
+package br.com.silen.geolocation;
+
+public class InvalidLocationException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+
+}

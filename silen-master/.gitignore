@@ -1,0 +1,12 @@
+.DS_Store
+/bin
+/lib
+.classpath
+.gradle/
+.project
+.settings/
+build/
+application.properties
+
+*.orig
+*.swp

@@ -1,0 +1,26 @@
+#form-container{
+     width: 100vw;
+     height: 100vh;
+     background: url(../_img/third.jpg);
+     background-repeat:no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ #form-box {
+     width: 300px;
+     padding: 20px;
+     box-sizing: border-box;
+ }
+
+ #form-box input {
+     font-size: large;
+ }
+ 
+#form-container form-group{ 
+      opacity: 0.1;
+     filter: alpha(opacity=10); /* For IE8 and earlier */
+}

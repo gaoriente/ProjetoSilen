@@ -1,0 +1,15 @@
+/* CSS Personalizado */
+
+
+
+.linhacinza{
+    background: gray;
+}
+
+.linhaazul{
+    background: blue;
+}
+
+.bg-color-padding p{
+    padding: 15px;
+}

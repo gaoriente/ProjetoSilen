@@ -1,0 +1,16 @@
+env=dev
+
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+
+spring.datasource.url=jdbc:mysql://localhost:3306/projeto_tcc_silen?useTimezone=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=
+spring.datasource.driver=com.mysql.jdbc.Driver
+
+geoapi.key=AIzaSyDoAVDb_4BRnBaa0CmUC2v0AMrlQ2PWoB0
+
+company.latitude=-23.550475
+company.longitude=-46.5969021
+
+hibernate.show_sql=false
